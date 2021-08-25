@@ -47,7 +47,7 @@ jobs:
             - ./node_modules
       - run:
           name: Deploy to Firebase
-          command: ./node_modules/.bin/firebase deploy --only hosting:"pruebas" --token "$FIREBASE_TOKEN"
+          command: ./node_modules/.bin/firebase deploy --only hosting:"develop" --token "$FIREBASE_TOKEN"
 
   deploy-prod:
     executor: my-executor
@@ -72,7 +72,7 @@ jobs:
             - ./node_modules
       - run:
           name: Deploy to Firebase
-          command: ./node_modules/.bin/firebase deploy --only hosting:"produccion" --token "$FIREBASE_TOKEN"
+          command: ./node_modules/.bin/firebase deploy --only hosting:"production" --token "$FIREBASE_TOKEN"
 
 workflows:
   version: 2

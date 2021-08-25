@@ -1,0 +1,20 @@
+{
+  "projects": {
+    "default": "reactreduxdemo-84add"
+  },
+  "targets": {
+    "reactreduxdemo-84add": {
+      "hosting": {
+        "production": [
+          "reactreduxdem"
+        ],
+        "develop": [
+          "reactreduxdemodevelop"
+        ],
+        "test": [
+          "reactreduxdemotest"
+        ]
+      }
+    }
+  }
+}
